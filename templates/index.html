@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- IE将使用最新的引擎渲染网页 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 页面的宽度与设备屏幕的宽度一致,初始缩放比例 1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+
+    <!--Extneral stylesheets and javascript-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../static/css/sticky-footer.css"> -->
+    <script type="text/javascript" src="../static/js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="../static/css/ie-emulation-modes-warning.js"></script> -->
+</head>
+
+<body>
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+          </button> -->
+          
+          <a class="navbar-brand">KIT & GAMI</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/setplandata">Setting</a></li>
+          </ul>
+          <div class="navbar-right">
+            <img src="./static/images/KIT-Logo1.jpg" style="width: 150px; height:50px; ">
+            <img src="./static/images/GAMI-Logo2.jpg" style="width: 140px; height:50px; ">
+          </div>
+        </div><!--/.nav-collapse -->
+        
+        
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <form method="POST" action="/setplandata">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h3>上下班前请选择点击相应按钮 </h3>
+        
+        <h3>Please select and click the appropriate button before going to and from work.</h3>
+       
+      </div>
+
+      
+      <div class="container">
+        <div class="row" style="text-align: center;">
+          <div class="col=md-8">
+            <button type="button" class="btn btn-success" style="height:200px; width: 300px; font-size: 40px;" value="Submit" id="workstatus1">上班 <br>Go to work</button>
+            <button type="button" class="btn btn-success" style="height:200px; width: 300px; font-size: 40px;" value="Submit" id="workstatus2">下班 <br>Go from work</button>
+            <!-- <button type="button" class="btn btn-success" style="height:200px; width: 300px; font-size: 40px;" value="Submit" id="workstatus1" onclick="document.all.workstatus2.disabled=!this.disabled">上班 <br>Go to work</button>
+            <button type="button" class="btn btn-success" style="height:200px; width: 300px; font-size: 40px;" value="Submit" id="workstatus2" onclick="document.all.workstatus1.disabled=!this.disabled">下班 <br>Go from work</button> -->
+          </div>     
+        </div>
+      </div>
+      </form>
+
+
+
+
+
+    </div> <!-- /container -->
+
+    <!-- <footer class="footer">
+      
+        <p class="text-muted">Place sticky footer content here.</p>
+      
+    </footer> -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
+    <!-- <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- <script src="../../assets/js/docs.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  <script>
+
+  </script>
+</body>
+</html>
